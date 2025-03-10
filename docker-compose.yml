@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  form-handler:
+    build: .
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./.env:/app/.env
